@@ -82,3 +82,22 @@ Backbone.Tastypie.csrfToken = $.cookie( 'csrftoken' );
 
 `Backbone.Collection.prototype.url` is overridden so it can build urls for a set of models. This is for example useful
 when using the `fetchRelated` method in [Backbone-relational](https://github.com/PaulUithol/Backbone-relational/).
+
+##### Backbone.Collection.prototype.fetchNext
+
+Fetches the next page by the URL provided by Tastypie
+
+##### Backbone.Collection.prototype.fetchPrevious
+
+Fetches the previous page by the URL provided by Tastypie
+
+##### Backbone.Collection.prototype.fetchPrevious.fetchSortedBy
+
+Fetches the result set sorted by the given key. 
+
+It requires tasty pie to have the column enabled for sorting.
+
+##### Backbone.Collection.prototype.fetchPrevious.filtrate
+
+Filters the result set on server-side.
+
